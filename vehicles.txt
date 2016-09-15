@@ -1,0 +1,4 @@
+VIN: BG1c64pmbib54k3pe Model: A6 Type: kombi Engine: petrol Kw: 134 Turbo: false EuroStandard: euro3 Transmission: automatic Gears: 4
+VIN: BG16ff99ef4ka1n51 Model: A6 Type: kombi Engine: petrol Kw: 134 Turbo: false EuroStandard: euro3 Transmission: automatic Gears: 4
+VIN: BG11m8kd8q9045mag Model: A5 Type: kombi Engine: electric Kw: 134 Transmission: automatic Gears: 6
+VIN: BG1350gc0jpm2i48d Model: A5 Type: kombi Engine: petrol Kw: 134 Turbo: false EuroStandard: euro4 Transmission: automatic Gears: 4

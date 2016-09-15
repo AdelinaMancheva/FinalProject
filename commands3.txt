@@ -1,0 +1,2 @@
+create car model=A6 engine=P-180hp-euro3 transmission=Manual-4
+create car model=A7 engine=P-180hp-euro3 transmission=Manual-4
