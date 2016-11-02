@@ -16,8 +16,4 @@ public class ManufactoryTables {
 		}
 	};;
 
-	public Map<String, Manufactory> getManufactoryTableBG() {
-		return this.MANUFACTRORY_TABLE_BG;
-	}
-
 }

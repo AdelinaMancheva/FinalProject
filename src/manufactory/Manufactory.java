@@ -24,18 +24,7 @@ public class Manufactory {
 	 *         manufactory)
 	 */
 	public String getCodeVIN() {
-		StringBuilder builder = new StringBuilder();
-		builder.append(country + numberOfManufactory);
-
-		return builder.toString();
-	}
-
-	public void setCountry(String country) {
-		this.country = country;
-	}
-
-	public void setNumberOfManufactory(int numberOfManufactory) {
-		this.numberOfManufactory = numberOfManufactory;
+		return new String(country + numberOfManufactory);
 	}
 
 }

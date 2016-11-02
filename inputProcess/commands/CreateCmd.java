@@ -38,7 +38,7 @@ public class CreateCmd implements BaseCommand {
 
 	EnginePowerValidation enginePowerValid = new EnginePowerValidation();
 	EngineInputValidation engineInputValid = new EngineInputValidation();
-	CreateInputValidation crateValid = new CreateInputValidation();
+	CreateInputValidation createValid = new CreateInputValidation();
 	ModelValidation modelValid = new ModelValidation();
 	TransmissionValidation transmValid = new TransmissionValidation();
 	CommandValidation cmdValid = new CommandValidation();
@@ -56,11 +56,11 @@ public class CreateCmd implements BaseCommand {
 	 */
 	private Model createModel(String vehicle, String model, String type) {
 		if (vehicle.equals("car")) {
-			if (crateValid.validateCarModel(model) && crateValid.validateCarType(type)) {
+			if (createValid.validateCarModel(model) && createValid.validateCarType(type)) {
 				return new Model(model, type);
 			}
 		} else if (vehicle.endsWith("suv")) {
-			if (crateValid.validateSUVModel(model)) {
+			if (createValid.validateSUVModel(model)) {
 				return new Model(model);
 			}
 		}
@@ -88,7 +88,7 @@ public class CreateCmd implements BaseCommand {
 	 * @return object of type Transmission, if validations passed
 	 */
 	private Transmission createTransmission(String type, int gears) {
-		if (crateValid.validateTransmType(type)) {
+		if (createValid.validateTransmType(type)) {
 			if (type.equals("Automatic") && transmValid.validateGearsForAutomatic(gears)) {
 				return new AutomaticTransmission(gears);
 
